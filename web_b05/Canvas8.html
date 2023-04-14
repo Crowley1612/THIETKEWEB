@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Canvas8</title>
+</head>
+
+<body>
+	<strong>
+	<canvas id="Canvas08" width = "200" height = "200" style="border: 3px solid #FF0000; "></canvas>
+</strong>
+    <script>
+		var c = document.getElementById("Canvas08");
+		var ctx = c.getContext('2d');
+		var grd = ctx.createRadialGradient(100, 100, 5, 100, 100, 90);
+		grd.addColorStop(0, "red");
+		grd.addColorStop(1, "white");
+		ctx.fillStyle = grd;
+		ctx.fillRect(10, 10, 190, 190);
+	</script>
+	
+</body>
+</html>

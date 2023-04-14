@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu 2</title>
+    <style>
+        #myCanvas {
+            width : 400px;
+            height : 400px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var width = canvas.width;
+        var height = canvas.height;
+        var centerX = width / 2;
+        var centerY = height / 2;
+
+        // Vẽ đường chéo chính (từ góc trên trái đến góc dưới phải)
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(width, height);
+        ctx.stroke();
+
+        // Vẽ đường chéo phụ (từ góc trên phải đến góc dưới trái)
+        ctx.beginPath();
+        ctx.moveTo(width, 0);
+        ctx.lineTo(0, height);
+        ctx.stroke();
+
+        // Vẽ đường thẳng đi qua tâm của đường chéo chính và đường chéo phụ ngắn lại 20%
+        var shortening = width * 0.2;
+        ctx.beginPath();
+        ctx.moveTo(centerX - shortening, centerY - shortening);
+        ctx.lineTo(centerX + shortening, centerY + shortening);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(centerX + shortening, centerY - shortening);
+        ctx.lineTo(centerX - shortening, centerY + shortening);
+        ctx.stroke();
+        // Vẽ đường thẳng đi qua tâm của đường chéo chính và đường chéo phụ ngắn lại 20%
+        var shortening = width * 0.2;
+        ctx.beginPath();
+        ctx.moveTo(centerX - shortening, centerY - (height * 0.1));
+        ctx.lineTo(centerX + shortening, centerY + (height * 0.1));
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(centerX + shortening, centerY - (height * 0.1));
+        ctx.lineTo(centerX - shortening, centerY + (height * 0.1));
+        ctx.stroke();
+
+        // Vẽ đường thẳng đi qua tâm của đường chéo chính nằm ngang
+        ctx.beginPath();
+        ctx.moveTo(0, centerY);
+        ctx.lineTo(width, centerY);
+        ctx.stroke();
+
+        // Vẽ đường thẳng đi qua tâm của đường chéo chính ngắn lại 20%
+        ctx.beginPath();
+        ctx.moveTo(centerX - shortening, centerY);
+        ctx.lineTo(centerX + shortening, centerY);
+        ctx.stroke();
+
+        // Vẽ đường thẳng đi qua tâm của đường chéo phụ ngắn lại 20%
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY - shortening);
+        ctx.lineTo(centerX, centerY + shortening);
+        ctx.stroke();
+    </script>
+</body> 
+</html>

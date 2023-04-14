@@ -1,0 +1,25 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  	font-family: sans-serif;
+ 	color: black;
+}
+#menu1 ul li {
+	background-color: blue;
+	float: left;
+	list-style: none;
+	margin-right: 5px;
+	padding: 10px 20px;
+}
+
+#menu1 ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+#menu1 ul li:hover {
+	background-color: orange;
+}

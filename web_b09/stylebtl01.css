@@ -3,13 +3,15 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
-header,
-.container,
-footer {
+.contain{
+    box-shadow: 5px 5px 5px grey;
+    width: 900px;
+}
+header,.container,footer {
     width: 900px;
     margin: 0 auto;
     text-align: center;
+    box-shadow: 5px 5px 5px grey ;
 }
 
 header {
@@ -23,11 +25,10 @@ header {
     flex-wrap: wrap;
     margin-top: 0px;
     width: 943px;
+    height: 500px;
 }
 
-.left-col,
-.right-col {
-
+.left-col,.right-col {
     flex-basis: 25%;
     padding: 20px;
     box-sizing: border-box;
@@ -54,7 +55,8 @@ header {
     text-align: center;
     margin-left: -21px;
     margin-right: -21px;
-    margin-bottom: -24px;
+    margin-top: 350px;
+    margin-bottom: -20px;
 }
 
 .right-col {

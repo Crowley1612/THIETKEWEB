@@ -1,0 +1,28 @@
+@charset "utf-8";
+		.sidebar {
+			width: 400px;
+			height: 130px;
+			background-color: #00f;
+		}
+		.sidebar ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.sidebar ul li {
+			line-height: 20px;
+			border-bottom: 1px solid #fff;		
+		}
+		.sidebar ul li a {
+			text-decoration: none;
+			color: #fff;
+			padding: 0 20px;
+		}
+		.sidebar ul li a:hover {
+			font-weight: bold;
+			background-color: #900;
+		}
+
+

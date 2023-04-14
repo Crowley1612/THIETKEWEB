@@ -1,0 +1,23 @@
+@charset "utf-8";
+div{
+			width: 200px;
+			padding: 20px;
+			text-emphasis: center;
+			font-weight: bold;
+			font-size: 25px;
+			background-color: #909;
+			color: #fff;
+			border-radious: 10px;
+			margin: 100px 0px;
+			position: relative;
+			animation: ani 5s linear 1s 2 alternate;
+			border-radius: 5px;
+		}
+@keyframes ani{
+			0% {background-color: #909; left: 0px;}
+			25% {background-color: #C3F;left:20%;}
+			50% {background-color: #F9F; left: 40%; transform: rotate(180deg)}
+			75% {background_color: #F6F; left: 60%;}
+			100% {background-color: #F0F; left:85%;}
+		}
+

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Canvas9</title>
+</head>
+
+<body>
+	<p><b>Image to use: </b></p>
+	<img id="Scream" src="https://kenh14cdn.com/thumb_w/660/2018/7/24/mu925-1000x1000-15324091401971245330638.jpg" alt="The Scream" width="220" height="280">
+	<p><i>Canvas to use: </i></p>
+	<canvas id="Canvas09" width = "250" height = "300" style="border: 1px solid #0000FF; ">Your browser doesn't support the HTML canvas tag</canvas>
+	<p><button onClick="myCanvas()">Canvas Picture</button></p>
+	
+	 <script>
+		var c = document.getElementById("Canvas09");
+		var ctx = c.getContext('2d');
+		var c = document.getElementById("Scream");
+		 ctx.drawImage(img, 15, 15);	 
+	</script>
+</body>
+</html>
